@@ -34,7 +34,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ بوت **إعادة تحميلها بشكل صحيح !**\n✅ **قائمة الملفات** لديك **محدث !**"
+        "✅تم تحديث بيانات البوت"
     )
 
 
@@ -89,7 +89,7 @@ async def skip(client, m: Message):
 
 
 @Client.on_message(
-    command(["ايقاف", f"ايقاف@{BOT_USERNAME}", "انزل", f"end@{BOT_USERNAME}", "vstop"])
+    command(["ايقاف", f"ايقاف@{BOT_USERNAME}", "كافي", f"end@{BOT_USERNAME}", "vstop"])
     & other_filters
 )
 @authorized_users_only
@@ -99,11 +99,11 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("✅ تم الايقاف وفصل الحساب من الدردشه الصوتيه.")
+            await m.reply("✅ تم وكفتهه حب.")
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
-        await m.reply("❌ **لاشئ يشتغل الان!!**")
+        await m.reply("❌ ماكو شي مشتغل حب")
 
 
 @Client.on_message(
