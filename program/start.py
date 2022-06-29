@@ -102,7 +102,7 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/ZZZZ7LZ"),
+                InlineKeyboardButton("قناة السورس", url=f"https://t.me/ZZZZ7LZ"),
                 InlineKeyboardButton(
                     "مطور السورس", url=f"https://t.me/Zzzz7lz"
                 ),
@@ -129,7 +129,7 @@ async def src(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("اوامر التشغيل", url=f"https://t.me/ZZZZ7LZ"),
+                InlineKeyboardButton("قناة السورس", url=f"https://t.me/ZZZZ7LZ"),
                 InlineKeyboardButton(
                     "مطور السورس", url=f"https://t.me/IIIT2"
                 ),
@@ -137,7 +137,7 @@ async def src(client: Client, message: Message):
         ]
     )
 
-    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nℹ️ 🎶 هذا هو سورس ايـــثــون ميوزك𖠀\nℹ️  اختصاص هذا البوت لتشغيل مقاطع صوتية او مقاطع الفيديو في المكالمات الصوتية \n\n**⚒ لعرض اوامر البوت يمكنك مشاهده الفيدو او قم بدخول الى خاص البوت وتابع التعليمات** 💖"
+    alive = f"**هلا {message.from_user.mention()}, i'm {BOT_NAME}**\n\nℹ️ 🫀هذا هوه بوت نوفا ميوزك𖠀\nℹ️  اختصاص هذا البوت لتشغيل مقاطع صوتية او مقاطع الفيديو في المكالمات الصوتية \n\n**⚒ لعرض اوامر البوت يمكنك مشاهده الفيدو او قم بدخول الى خاص البوت وتابع التعليمات** 💖"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
